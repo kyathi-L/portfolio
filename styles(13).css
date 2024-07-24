@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#resume {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+#resume .resume-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+#resume:hover {
+  background-color: #3f8b43;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+.nav-tabs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav-tabs ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav-tabs ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.nav-tabs ul li a:hover {
+  color: #4CAF50;
+  padding: 10px;
+  border-radius: 5px;
+  transform: scale(1.25);
+}
+
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
+}
+.contact-info {
+  list-style-type: none;
+  margin-top: 10px;
+  color: azure;
+}
+.contact-info a {
+  color: azure;
+}
+.contact-info li {
+  margin-bottom: 5px;
+}
+.contact-info .icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+section h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+  text-align: center;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.skills-list,
+.education-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.skills-list li,
+.education-list li {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skills-list li {
+  font-weight: bold;
+}
+.education-list li {
+  font-size: 18px;
+}
+.skills-list li:hover,
+.education-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.skills-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #4CAF50;
+}
+.project h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.project p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.project-link:hover {
+  background-color: #45a049;
+}
+
+.experience-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.experience-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.experience-item h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.experience-item p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.certifications {
+  padding-left: 20px;
+}
+.certifications li {
+  margin-bottom: 5px;
+}
+.certifications {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.certifications li::before {
+  margin-right: 10px;
+  color: #4CAF50;
+}
+.certifications li:hover
+{
+  color: #45a049;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
